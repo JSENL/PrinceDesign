@@ -1,0 +1,105 @@
+body {
+  margin: 100px;
+  	background: url(../image/purprain.gif);}
+
+	.wrapper {
+    display: grid;
+    grid-gap: 40px;
+    background: url(../image/purprain.gif);
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 100px 100px 100px;
+        background-color: #fff;
+        color: #444;
+    }
+
+    .box {
+    background: url(../image/purprain.gif);
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 150%;
+
+    }
+  .a {
+		grid-column:1 /4;
+		grid-row: 1;
+    color: #000;
+    background-image: url(../image/purple.jpg);
+	}
+	.b {
+    width: auto;
+		grid-column:1;
+		grid-row: 2; 
+    background-image: url(../image/rsprince.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+	}
+	.c {
+		grid-column: 2/4 ;
+		grid-row: 2 ;
+        color: #000;
+	}
+	.d {
+		grid-column: 2;
+		grid-row: 4;
+    color: #000;
+   background-image: url(../image/purple.jpg);
+	}
+  /*Marquee properties*/
+  MARQUEE
+  {
+background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+color: #9701E6;
+  }
+  .e{
+    grid-column: 1; 
+    grid-row: 4;
+    color: #000;
+    background-image: url(../image/purple.jpg);
+  }
+  .f{
+    grid-column: 3; 
+    grid-row: 4;
+    color: #000;
+    background-image: url(../image/purple.jpg);
+  }
+  
+  audio
+  {margin-top: 100px;
+  }
+a
+  {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 110px;
+    float: left;
+    animation: skew 3s infinite;
+  transform: skew(45deg);
+  animation-direction: alternate;
+  opacity: .6;
+  }
+  /*added multiple transform/keyframes*/
+  @keyframes skew {
+  0% {
+    transform: rotate(0deg);
+  }
+  25%
+  {
+    transform: rotate3d(180deg); 
+  }
+  50%
+  {
+    transform: rotateZ(180deg);
+    
+    transform: rotateY(180deg);
+  }
+  75%
+  {
+   transform: rotateX(180deg); 
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  p{margin: 10px;
+    text-align: center;}
+
